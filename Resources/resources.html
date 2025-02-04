@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resources</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../index.html" class="logo">EduMaster</a>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Courses/courses.html">Courses</a></li>
+                    <li><a href="../About/about.html" >About</a></li>
+                    <li><a href="../Blog/blog.html">Blog</a></li>
+                    <li><a href="../Resources/resources.html">Resources</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="resources-section">
+      <div class="container">
+          <h1 class="section-title">Educational Resources</h1>
+  
+          <div class="search-bar">
+              <input type="text" id="searchInput" placeholder="Search for resources...">
+              <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+  
+          <div class="resource-categories">
+              <button class="category-btn active" data-category="all">All</button>
+              <button class="category-btn" data-category="math">Math</button>
+              <button class="category-btn" data-category="science">Science</button>
+              <button class="category-btn" data-category="literature">Literature</button>
+              <button class="category-btn" data-category="history">History</button>
+              <button class="category-btn" data-category="language">Language</button>
+              <button class="category-btn" data-category="coding">Coding</button>
+          </div>
+  
+          <div class="resources-grid">
+              <div class="resource-card" data-category="math">
+                  <div class="resource-icon"><i class="fas fa-calculator"></i></div>
+                  <h2>Mathematics Study Guide</h2>
+                  <p>Comprehensive guide covering algebra, geometry, and calculus.</p>
+                  <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="resource-card" data-category="science">
+                  <div class="resource-icon"><i class="fas fa-flask"></i></div>
+                  <h2>Science Lab Manual</h2>
+                  <p>Step-by-step instructions for various science experiments.</p>
+                  <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="resource-card" data-category="literature">
+                  <div class="resource-icon"><i class="fas fa-book"></i></div>
+                  <h2>Literature Analysis Toolkit</h2>
+                  <p>Learn how to analyze and interpret classic literature.</p>
+                  <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="resource-card" data-category="history">
+                  <div class="resource-icon"><i class="fas fa-landmark"></i></div>
+                  <h2>History Timeline Poster</h2>
+                  <p>Visual representation of major historical events.</p>
+                  <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="resource-card" data-category="language">
+                  <div class="resource-icon"><i class="fas fa-language"></i></div>
+                  <h2>Language Learning Flashcards</h2>
+                  <p>Printable flashcards for vocabulary building in multiple languages.</p>
+                  <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="resource-card" data-category="coding">
+                  <div class="resource-icon"><i class="fas fa-code"></i></div>
+                  <h2>Coding Basics eBook</h2>
+                  <p>Introduction to programming concepts and basic coding skills.</p>
+                  <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+          </div>
+      </div>
+  </main>
+
+    
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            We are dedicated to providing quality education and fostering a love
+            for learning in all our students. Our mission is to empower
+            individuals through knowledge and skills.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Courses/courses.html">Courses</a></li>
+            <li><a href="../About/about.html">About</a></li>
+            <li><a href="../Blog/blog.html">Blog</a></li>
+            <li><a href="../Resources/resources.html">Resources</a></li>
+            <li><a href="../Contact/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Maitidevi <br />
+            <i class="fas fa-phone"></i> +977 9846321857<br />
+            <i class="fas fa-envelope"></i> info@edumaster.com
+          </p>
+        </div>
+        <div class="footer-section newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+            
+            <form onsubmit="handleSubmit(event)">
+              <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+              />
+              <button type="submit">
+                  Subscribe
+              </button>
+          </form>
+            
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="resources.js"></script>
+</body>
+</html>
+   
+    
+   
+

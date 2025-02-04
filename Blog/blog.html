@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMaster Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">EduMaster</a>
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Courses/courses.html">Courses</a></li>
+                <li><a href="../About/about.html" >About</a></li>
+                <li><a href="../Blog/blog.html">Blog</a></li>
+                <li><a href="../Resources/resources.html">Resources</a></li>
+                <li><a href="../Contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="blog-container">
+                <section class="blog-posts">
+                    <article class="blog-post">
+                        <img src="../Images/Laptop.jpeg" alt="Digital learning tools" class="post-image">
+                        <div class="post-content">
+                            <h2 class="post-title">Enhancing Learning Through Technology</h2>
+                            <div class="post-meta">
+                                <span class="post-date">July 30, 2024</span>
+                                <span class="post-author">by Emma Johnson</span>
+                            </div>
+                            <p class="post-excerpt">In recent years, the integration of technology into education has revolutionized the way we teach and learn. From interactive whiteboards to artificial intelligence-powered tutoring systems, digital tools are reshaping the educational landscape and significantly improving learning outcomes.</p>
+                            <a href="learn.html" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <img src="../Images/Manxe.jpeg" alt="Group of diverse people learning together" class="post-image">
+                        <div class="post-content">
+                            <h2 class="post-title">The Importance of Lifelong Learning</h2>
+                            <div class="post-meta">
+                                <span class="post-date">July 25, 2024</span>
+                                <span class="post-author">by Michael Chen</span>
+                            </div>
+                            <p class="post-excerpt">In today's rapidly evolving world, the concept of education as something that ends with formal schooling is becoming increasingly obsolete. Lifelong learning – the ongoing, voluntary, and self-motivated pursuit of knowledge – is now recognized as a crucial factor in personal and professional success.</p>
+                            <a href="tech.html" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                </section>
+                <aside class="sidebar">
+                    <div class="widget">
+                        <h3 class="widget-title">Search</h3>
+                        <form class="search-form">
+                            <input type="text" placeholder="Search...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">E-learning</a></li>
+                            <li><a href="#">Study Tips</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Career Advice</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget-title">Recent Posts</h3>
+                        <ul class="recent-posts">
+                            <li><a href="#">The Impact of AI on Education</a></li>
+                            <li><a href="#">How to Stay Motivated While Learning Online</a></li>
+                            <li><a href="#">Top 10 Online Learning Platforms</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+   
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            We are dedicated to providing quality education and fostering a love
+            for learning in all our students. Our mission is to empower
+            individuals through knowledge and skills.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Courses/courses.html">Courses</a></li>
+            <li><a href="../About/about.html">About</a></li>
+            <li><a href="../Blog/blog.html">Blog</a></li>
+            <li><a href="../Resources/resources.html">Resources</a></li>
+            <li><a href="../Contact/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Maitidevi <br />
+            <i class="fas fa-phone"></i> +977 9846321857<br />
+            <i class="fas fa-envelope"></i> info@edumaster.com
+          </p>
+        </div>
+        <div class="footer-section newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+            
+            <form onsubmit="handleSubmit(event)">
+              <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+              />
+              <button type="submit">
+                  Subscribe
+              </button>
+          </form>
+            
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="blog.js"></script>
+
+
+</body>
+</html>
